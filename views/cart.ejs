@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Shopping Cart</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+       <!-- header  -->
+
+       <header class="header">
+
+        <a href="homepage.ejs" class="logo"> <i class="fas fa-shopping-basket"></i> Foodsco </a>
+
+        <nav class="navbar">
+            <a href="homepage.ejs">home</a>
+            <a href="shop.ejs">shop</a>
+            <a href="#about">about</a>
+            <a href="contact.ejs">contact</a>
+        </nav>
+
+        <div class="icons">
+
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.ejs">
+                 <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </a>
+            <a href="login.ejs">
+                <div id="login-btn" class="fas fa-user"></div>
+            </a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="search-box" placeholder="search" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header -->
+
+
+
+    <div class="container">
+
+        <h1>Shopping Cart</h1>
+
+        <div class="cart">
+
+            <div class="products">
+
+                <div class="product">
+
+                    <img src="images\apple.jpg">
+
+                    <div class="product-info">
+
+                        <h3 class="product-name">Apple</h3>
+
+                        <h4 class="product-price">₹ 35</h4>
+
+                
+
+                        <p class="product-quantity">Qnt: <input value="4" name="">
+
+                        <p class="product-remove">
+
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+
+                            <span class="remove">Remove</span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <img src="images/cornflakes.jpg">
+
+                    <div class="product-info">
+
+                        <h3 class="product-name">Corn Flakes</h3>
+
+                        <h4 class="product-price">₹ 250</h4>
+
+
+                        <p class="product-quantity">Qnt: <input value="1" name="">
+
+                        <p class="product-remove">
+
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+
+                            <span class="remove">Remove</span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cart-total">
+
+                <p>
+
+                    <span>Total Price</span>
+
+                    <span>₹ 390</span>
+
+                </p>
+
+                <p>
+
+                    <span>Number of Items</span>
+
+                    <span>2</span>
+
+                </p>
+
+                <a href="#">Proceed to Pay</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

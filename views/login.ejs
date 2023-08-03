@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75d8e829cb.js" crossorigin="anonymous"></script>
+    <title>signin/login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body> 
+     <!-- header  -->
+     <header class="header">
+
+        <a href="homepage.ejs" class="logo"> <i class="fas fa-shopping-basket"></i> Foodsco </a>
+
+        <nav class="navbar">
+            <a href="homepage.ejs">home</a>
+            <a href="shop.ejs">shop</a>
+            <a href="#about">about</a>
+            <a href="contact.ejs">contact</a>
+        </nav>
+
+        <div class="icons">
+
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.ejs">
+                 <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </a>
+            <a href="login.ejs">
+                <div id="login-btn" class="fas fa-user"></div>
+            </a>
+            
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="search-box" placeholder="search" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header -->
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="/form2" class="sign-in-form" name="reg" method="post">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <a href="homepage.ejs"><input type="submit" class="btn solid" value="Login"></a>
+                
+                </form>
+            </div>
+        </div>
+
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>
+                        Create a new account
+                    </p>
+                    <a href="signup.ejs">
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button></a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+.home {
+    padding-top: 14rem;
+    position: relative;
+  }
+  
+  .home .slides-container .slide {
+    display: flex;
+    box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    display: none;
+  }
+  
+  .home .slides-container .slide.active {
+    display: flex;
+  }
+  
+  .home .slides-container .slide .content {
+    box-flex: 1;
+    flex: 1 1 40rem;
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-size: 4rem;
+    color: #222;
+    padding: .5rem 0;
+  }
+  
+  .home .slides-container .slide .image {
+    box-flex: 1;
+    flex: 1 1 40rem;
+    margin: 3rem 0;
+  }
+  
+  .home .slides-container .slide .image img {
+    width: 100%;
+  }
+  
+  .home #next-slide,
+  .home #prev-slide {
+    position: absolute;
+    top: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #fff;
+    font-size: 3rem;
+    color: #222;
+    cursor: pointer;
+  }
+  
+  .home #next-slide:hover,
+  .home #prev-slide:hover {
+    background:#20dbc2;;
+    color: #fff;
+  }
+  
+  .home #prev-slide {
+    left: 2rem;
+  }
+  
+  .home #next-slide {
+    right: 2rem;
+  }
+  
+  .banner-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .banner-container .banner {
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+  }
+  
+  .banner-container .banner:hover img {
+    transform: scale(1.2);
+  }
+  
+  .banner-container .banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .banner-container .banner .content {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+  }
+  
+  .banner-container .banner .content h3 {
+    font-size: 2rem;
+    padding-top: .5rem;
+    color: #222;
+  }
+  
+  .banner-container .banner .content .btn {
+    padding: .8rem 2.5rem;
+   
+  }
+
+  .footer {
+    background: #f3f3f3;
+  }
+
+  .about {
+    gap: 0.2rem;
+    background: #f3f3f3;
+  }
+  
+  .about-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 13.5px;
+    padding-bottom: 0.5px;
+    background: #f3f3f3;
+  }
+  
+  .about .content h3 {
+    color: #222;
+    font-size: 1.2rem;
+    padding-top: .5px;
+  }
+  
+  .about .content p {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0.5px 0;
+  }
+  

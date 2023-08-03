@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header class="header">
+
+        <a href="homepage.ejs" class="logo"> <i class="fas fa-shopping-basket"></i> Foodsco </a>
+
+        <nav class="navbar">
+            <a href="homepage.ejs">home</a>
+            <a href="shop.ejs">shop</a>
+            <a href="#about">about</a>
+            <a href="contact.ejs">contact</a>
+        </nav>
+
+        <div class="icons">
+
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.ejs">
+                <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </a>
+            <a href="login.ejs">
+                <div id="login-btn" class="fas fa-user"></div>
+            </a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="search-box" placeholder="search" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- SHOP  -->
+
+    <div class="heading">
+        <h1>our shop</h1>
+        <p> <a href="homepage.ejs">home >></a> shop </p>
+    </div>
+
+    <section class="category">
+
+        <h1 class="title"> our category <a href="#">view all >></a> </h1>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="images/freshfruits.jpg" alt="">
+                <h3>fresh fruits</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/vegetables.jpeg" alt="">
+                <h3>vegetables</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/spices.jpg" alt="">
+                <h3>organic spices</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/meat.jpg" alt="">
+                <h3>fresh meat</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/wheat.jpg" alt="">
+                <h3>organic wheat</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="products">
+
+        <h1 class="title"> our products <a href="#">view all >></a> </h1>
+
+        <div class="box-container">
+            <% prices.forEach(prices=> { %>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+
+                        <img src=<%=prices.image %> alt="">
+                    </div>
+                    <div class="content">
+                        <h3>
+                            <%= prices.product %>
+                        </h3>
+                        <div class="price">
+                            <%= prices.price %>
+                        </div>
+
+                    </div>
+                </div>
+                <% }) %>
+
+        </div>
+
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

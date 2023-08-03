@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="header">
+
+        <a href="homepage.ejs" class="logo"> <i class="fas fa-shopping-basket"></i> Foodsco </a>
+
+        <nav class="navbar">
+            <a href="homepage.ejs">home</a>
+            <a href="shop.ejs">shop</a>
+            <a href="#about">about</a>
+            <a href="contact.ejs">contact</a>
+        </nav>
+
+        <div class="icons">
+
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.ejs">
+                 <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </a>
+            <a href="login.ejs">
+                <div id="login-btn" class="fas fa-user"></div>
+            </a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="search-box" placeholder="search" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+    <!-- header -->
+
+    <div class="heading">
+        <h1>contact us</h1>
+        <p> <a href="homepage.ejs">home >></a> contact </p>
+    </div>
+
+    <section class="contact">
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>Contact number</h3>
+                <p>000-000-0000</p>
+                <p>000-000-0000</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>Contact Email</h3>
+                <p>aviral@gmail.com</p>
+                <p>priyanshi@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Contact address</h3>
+                <p>Vellore, India</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <form action="/contact-form" id="contact-form" method="post">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="enter your name" class="box" name="name"> 
+                    <input type="email" placeholder="enter your email" class="box" name="email">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="enter your number" class="box" name="number">
+                    <input type="text" placeholder="enter your subject" class="box" name="subject">
+                </div>
+                <textarea placeholder="your message" cols="30" rows="10" name="message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+    </section>
+
+        <script >
+        function validateform(){
+            
+        
+            alert("enter valid phone number");
+        }</script>
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
